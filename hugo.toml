@@ -7,3 +7,7 @@ disableKinds = ["404", "robotstxt", "rss", "sitemap", "taxonomy", "term"]
 [params]
     description = 'Personal website of Ryan Lim.'
     author = 'Ryan Lim'
+
+[markup]
+    [markup.highlight]
+    noClasses = false
