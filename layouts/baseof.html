@@ -13,6 +13,7 @@
         {{ $opts := dict "transpiler" "dartsass" }}
         {{ $style := resources.Get "main.scss" | css.Sass $opts | resources.Minify | resources.Fingerprint }}
         <link rel="stylesheet" type="text/css" href="{{ $style.RelPermalink }}">
+        {{ if .Params.math }}
         <script>
             MathJax = {
                 tex: {
@@ -22,6 +23,7 @@
             }
         </script>
         <script defer src="/mathjax/tex-chtml.js"></script>
+        {{ end }}
     </head>
     <body>
         <main>
