@@ -1,0 +1,31 @@
+@use "./reset";
+@use "./fonts";
+
+:root {
+    --color-background: #ffffff;
+    --color-foreground: #444444;
+    --color-link: #0864c7;
+}
+
+body {
+    font-family: "Crimson Text", sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--color-foreground);
+    background-color: var(--color-background);
+    overflow-y: scroll;
+}
+
+main {
+    max-width: 800px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+a {
+    color: var(--color-link);
+}
