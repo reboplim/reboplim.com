@@ -1,3 +1,9 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://reboplim.com/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Ryan Lim'
+disableHugoGeneratorInject = true
+disableKinds = ["404", "robotstxt", "rss", "sitemap", "taxonomy", "term"]
+
+[params]
+    description = 'Personal website of Ryan Lim.'
+    author = 'Ryan Lim'
